@@ -23,7 +23,7 @@
             android:layout_margin="8dp"
             android:background="@drawable/button_bg"
             android:textColor="#FFFFFF"
-            android:text="+订阅"/>
+            android:text="+置顶"/>
     </LinearLayout>
 
     <LinearLayout
@@ -33,6 +33,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/tv_diary_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="美文"
@@ -40,13 +41,15 @@
             android:textStyle="bold"/>
 
         <TextView
+            android:id="@+id/tv_diary_account"
             android:layout_marginTop="4dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="订阅数：4000000"
+            android:text="浏览数：4000000"
             android:textSize="12sp"/>
 
         <TextView
+            android:id="@+id/tv_diary_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -56,10 +59,11 @@
             android:text="故事，启迪你的人生；美文，陶冶你的情操，有声朗读，洗礼你的耳朵……"/>
 
         <TextView
+            android:id="@+id/tv_diary_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="05-20 更新至第78期"/>
+            android:text="2017年2月7日 20:08"/>
     </LinearLayout>
 
 

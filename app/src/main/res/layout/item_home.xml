@@ -12,13 +12,13 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:paddingTop="24dp">
-            <include layout="@layout/activity_detail"/>
-            <include layout="@layout/activity_detail"/>
-            <include layout="@layout/activity_detail"/>
-            <include layout="@layout/activity_detail"/>
-            <include layout="@layout/activity_detail"/>
-            <include layout="@layout/activity_detail"/>
-            <include layout="@layout/activity_detail"/>
+            <include layout="@layout/list_diary_item"/>
+            <include layout="@layout/list_diary_item"/>
+            <include layout="@layout/list_diary_item"/>
+            <include layout="@layout/list_diary_item"/>
+            <include layout="@layout/list_diary_item"/>
+            <include layout="@layout/list_diary_item"/>
+            <include layout="@layout/list_diary_item"/>
 
 
         </LinearLayout>

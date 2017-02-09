@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.wen.mylife.adapter.FragmentAdapter;
+import com.example.wen.mylife.fragment.DiaryFragment;
 import com.example.wen.mylife.fragment.TwoFragment;
 
 import java.util.ArrayList;
@@ -34,22 +35,7 @@ public class MainActivity extends AppCompatActivity {
         final ActionBar ab = getSupportActionBar();
         ab.setHomeAsUpIndicator(R.drawable.ic_menu);
         ab.setDisplayHomeAsUpEnabled(true);
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Snackbar comes out", Snackbar.LENGTH_LONG)
-                        .setAction("Action", new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                Toast.makeText(
-                                        MainActivity.this,
-                                        "Toast comes out",
-                                        Toast.LENGTH_SHORT).show();
-                            }
-                        }).show();
-            }
-        });
+
 
         mViewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager();
@@ -69,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         mTabLayout.addTab(mTabLayout.newTab().setText(titles.get(1)));
         mTabLayout.addTab(mTabLayout.newTab().setText(titles.get(2)));
         List<Fragment> fragments = new ArrayList<>();
-        fragments.add(new TwoFragment());
+        fragments.add(new DiaryFragment());
         fragments.add(new TwoFragment());
         fragments.add(new TwoFragment());
         FragmentAdapter adapter =
